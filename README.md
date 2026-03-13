@@ -116,6 +116,35 @@ sudo systemctl status myservice
 
 After installing as systemd, you can manage it with regular `systemctl` commands, and the service manager's configuration becomes a fallback.
 
+## 🛠️ Toolkit
+
+This repository has evolved into a **Linux DevOps Toolkit** with multiple specialized utilities.
+
+### Available Tools
+
+| Tool | Description | Status |
+|------|-------------|--------|
+| [`multi-cloud-cost-optimizer`](tools/multi-cloud-cost-optimizer/README.md) | Tool that aggregates costs across AWS/Azure/GCP, provides recommendations, and can automatically implement savings (right-sizing, reserved instances, spot instances). | ✅ Ready |
+
+### Using a Tool
+
+Each tool is self-contained in its own directory:
+
+```bash
+# See help for a specific tool
+./tools/<tool-name>/<main-file> --help
+
+# Or install it system-wide
+cd tools/<tool-name>
+sudo make install
+```
+
+### Development
+
+Tools are automatically generated scaffolds based on market gap analysis.
+See [Gap Analyzer](gap-analyzer.py) for how new tools are created.
+
+
 ## Command Reference
 
 | Command | Description |
