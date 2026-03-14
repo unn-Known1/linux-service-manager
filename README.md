@@ -125,6 +125,7 @@ This repository has evolved into a **Linux DevOps Toolkit** with multiple specia
 | Tool | Description | Status |
 |------|-------------|--------|
 | [`multi-cloud-cost-optimizer`](tools/multi-cloud-cost-optimizer/README.md) | Tool that aggregates costs across AWS/Azure/GCP, provides recommendations, and can automatically implement savings (right-sizing, reserved instances, spot instances). | ✅ Ready |
+| [`secret-rotation-orchestrator`](tools/secret-rotation-orchestrator/README.md) | Orchestrate secret rotation across systems: generate new secrets, update dependent services atomically, handle rollback, maintain audit trail. | ✅ Ready |
 
 ### Using a Tool
 
@@ -141,8 +142,7 @@ sudo make install
 
 ### Development
 
-Tools are automatically generated scaffolds based on market gap analysis.
-See [Gap Analyzer](gap-analyzer.py) for how new tools are created.
+
 
 
 ## Command Reference
