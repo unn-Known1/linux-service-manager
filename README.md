@@ -124,6 +124,38 @@ This repository has evolved into a **Linux DevOps Toolkit** with multiple specia
 
 | Tool | Description | Status |
 |------|-------------|--------|
+| [`incident-timeline-builder`](tools/incident-timeline-builder/README.md) | Automatically ingest data from monitoring, logging, chat (Slack/Discord), deployments, and build an interactive timeline with AI-assisted event correlation. | ✅ Ready |
+| [`infrastructure-drift-detector`](tools/infrastructure-drift-detector/README.md) | Continuous drift detection that compares live infrastructure against IaC definitions, alerts on discrepancies, and can auto-remediate. | ✅ Ready |
+| [`multi-cloud-cost-optimizer`](tools/multi-cloud-cost-optimizer/README.md) | Tool that aggregates costs across AWS/Azure/GCP, provides recommendations, and can automatically implement savings (right-sizing, reserved instances, spot instances). | ✅ Ready |
+| [`secret-rotation-orchestrator`](tools/secret-rotation-orchestrator/README.md) | Orchestrate secret rotation across systems: generate new secrets, update dependent services atomically, handle rollback, maintain audit trail. | ✅ Ready |
+
+### Using a Tool
+
+Each tool is self-contained in its own directory:
+
+```bash
+# See help for a specific tool
+./tools/<tool-name>/<main-file> --help
+
+# Or install it system-wide
+cd tools/<tool-name>
+sudo make install
+```
+
+### Development
+
+Tools are automatically generated scaffolds based on market gap analysis.
+See [Gap Analyzer](gap-analyzer.py) for how new tools are created.
+
+
+## 🛠️ Toolkit
+
+This repository has evolved into a **Linux DevOps Toolkit** with multiple specialized utilities.
+
+### Available Tools
+
+| Tool | Description | Status |
+|------|-------------|--------|
 | [`infrastructure-drift-detector`](tools/infrastructure-drift-detector/README.md) | Continuous drift detection that compares live infrastructure against IaC definitions, alerts on discrepancies, and can auto-remediate. | ✅ Ready |
 | [`multi-cloud-cost-optimizer`](tools/multi-cloud-cost-optimizer/README.md) | Tool that aggregates costs across AWS/Azure/GCP, provides recommendations, and can automatically implement savings (right-sizing, reserved instances, spot instances). | ✅ Ready |
 | [`secret-rotation-orchestrator`](tools/secret-rotation-orchestrator/README.md) | Orchestrate secret rotation across systems: generate new secrets, update dependent services atomically, handle rollback, maintain audit trail. | ✅ Ready |

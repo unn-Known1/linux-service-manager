@@ -1,0 +1,4 @@
+# Add Python dependencies here
+# Example:
+# click>=8.0
+# pandas>=1.0
